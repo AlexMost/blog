@@ -1,8 +1,9 @@
 body {
+    font-family: medium-content-sans-serif-font;
     color: black;
     font-size: 16px;
     margin: 0px auto 0px auto;
-    width: 80%;
+    max-width: 800px;
 }
 
 div#header {
