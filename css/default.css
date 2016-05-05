@@ -43,7 +43,7 @@ div#footer {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 h2 {
@@ -54,4 +54,12 @@ div.info {
     color: #555;
     font-size: 16px;
     font-style: italic;
+}
+
+p {
+  font-size: 19px;
+  font-family: medium-content-serif-font;
+  color: #333;
+  font-style:normal;
+  line-height:27px;
 }

@@ -3,8 +3,8 @@ title: Test Post
 date: 2015-05-05
 ---
 
-### here is some text
-here is some haskell code
+## Header 2
+Decorate your workstation with images that suggest competency. These will work subliminally and so create connections within your co-workers’ brains between images of competency and you. Examples of such images include: firemen, guide-dogs for the blind, Chairman Mao, Taylor Swift.
 ``` haskell
 import qualified GHC.IO.Encoding as E
 main :: IO ()
