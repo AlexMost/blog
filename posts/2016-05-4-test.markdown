@@ -1,0 +1,18 @@
+---
+title: Test Post
+date: 2015-05-05
+---
+
+### here is some text
+here is some haskell code
+```haskell
+main :: IO ()
+main = do
+  putStrLn "Hello hakyll"
+```
+
+```javascript
+function(){
+  console.log("hello hakyl")
+}
+```
