@@ -2,7 +2,7 @@ body {
     color: black;
     font-size: 16px;
     margin: 0px auto 0px auto;
-    width: 600px;
+    width: 80%;
 }
 
 div#header {
@@ -51,6 +51,6 @@ h2 {
 
 div.info {
     color: #555;
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
 }

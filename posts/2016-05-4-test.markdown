@@ -5,14 +5,15 @@ date: 2015-05-05
 
 ### here is some text
 here is some haskell code
-```haskell
+``` haskell
+import qualified GHC.IO.Encoding as E
 main :: IO ()
 main = do
   putStrLn "Hello hakyll"
 ```
 
-```javascript
+``` javascript
 function(){
-  console.log("hello hakyl")
+  console.log("hello hakyll")
 }
 ```
