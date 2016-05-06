@@ -5,6 +5,10 @@ date: 2015-05-05
 
 ## Header 2
 Decorate your workstation with images that suggest competency. These will work subliminally and so create connections within your co-workers’ brains between images of competency and you. Examples of such images include: firemen, guide-dogs for the blind, Chairman Mao, Taylor Swift.
+
+
+<img src="/images/haskell-logo.png"/>
+
 ``` haskell
 import qualified GHC.IO.Encoding as E
 main :: IO ()
@@ -12,6 +16,14 @@ main = do
   putStrLn "Hello hakyll"
 ```
 
+Decorate your workstation with images that suggest competency. These will work subliminally and so create connections within your co-workers’ brains between images of competency and you. Examples of such images include: firemen, guide-dogs for the blind, Chairman Mao, Taylor Swift.
+``` javascript
+function(){
+  console.log("hello hakyll")
+}
+```
+
+Decorate your workstation with images that suggest competency. These will work subliminally and so create connections within your co-workers’ brains between images of competency and you. Examples of such images include: firemen, guide-dogs for the blind, Chairman Mao, Taylor Swift.
 ``` javascript
 function(){
   console.log("hello hakyll")
