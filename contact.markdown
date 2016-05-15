@@ -2,5 +2,6 @@
 title: Contact
 ---
 
-I live in a small hut in the mountains of Kumano Kodō on Kii Hantō and would not
-like to be contacted.
+* github - [https://github.com/AlexMost](https://github.com/AlexMost)
+* twitter - [https://twitter.com/MostovenkoA](https://twitter.com/MostovenkoA)
+* strava - [https://www.strava.com/athletes/8576519](https://www.strava.com/athletes/8576519)
