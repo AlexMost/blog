@@ -1,6 +1,6 @@
 body {
     font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
-    color: black;
+    color: #3a3a3a;
     font-size: 16px;
     margin: 0px auto 0px auto;
     max-width: 800px;
@@ -58,7 +58,15 @@ div.info {
 p {
   font-size: 19px;
   font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
-  color: #333;
+  color: #515151;
   font-style:normal;
   line-height:30px;
+}
+
+ul {
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-size: 19px;
+  color: #515151;
+  font-style: italic;
+  line-height: 30px;
 }
