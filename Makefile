@@ -1,5 +1,6 @@
 install:
 	stack setup
+	stack build
 
 build:
 	stack exec site build
