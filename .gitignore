@@ -1,5 +1,6 @@
 .idea/
 .stack-work/
 _cache/
+_site/
 blog.iml
 .DS_Store
