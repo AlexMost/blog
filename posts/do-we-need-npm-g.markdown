@@ -29,16 +29,11 @@ Here is the example of basic project build setup, assume you have decided to bui
 your assets with webpack and test with karma:
 
 ```bash
-export PATH = $PATH:/node_modules/.bin
+SHELL := /bin/bash
+export PATH := $(PWD)/node_modules/.bin:$(PATH)
 
-make build:
-    webpack
-    
-make test:
-    karma test/
-    
-make deploy:
-    webpack -p
+build:
+        webpack
 ```
 
 ## Npm commands
