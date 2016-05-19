@@ -1,6 +1,7 @@
 ---
 title: Do we need npm -g?
 date: 2016-05-18
+tags: javascript, frontend, webpack, make
 ---
 
 ## The problem
@@ -36,7 +37,7 @@ npm init
 
 after that install webpack locally:
 ```bash
-npm install --save-dev webapck
+npm install --save-dev webpack
 ```
 
 and here is a simple make file that will add your local *node_modules/.bin* to *PATH* and can

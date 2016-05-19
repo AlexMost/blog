@@ -1,6 +1,7 @@
 ---
 title: Browser rendering optimisation (Udacity course)
 date: 2016-05-15
+tags: javascript, frontend, courses
 ---
 <img src="/images/render-optimisations/udacity-logo.png"/>
 
