@@ -12,7 +12,7 @@ time in your tests.
 ## Mock time? Something like having a time travel machine?
 Not actually, there is no special magic and this feature is available due to
 Schedulers (more about schedulers here). Shortly speaking, it is an abstraction
-on top coordinating and executing time dependent operations such as delay, throttle,
+on top of coordinating and executing time dependent operations such as delay, throttle,
 debounce, timeout e.t.c
 
 ## Little example
