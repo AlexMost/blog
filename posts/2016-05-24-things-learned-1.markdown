@@ -1,6 +1,6 @@
 ---
 title: Things learned this week #1
-date: 2016-05-21
+date: 2016-05-24
 tags: learned this week
 ---
 
