@@ -1,9 +1,10 @@
 body {
     font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
     color: #3a3a3a;
-    font-size: 16px;
+    font-size: 100%;
     margin: 0px auto 0px auto;
     max-width: 800px;
+    padding: 0 15px;
 }
 
 div#header {
@@ -15,19 +16,17 @@ div#header {
 div#logo a {
     color: black;
     float: left;
-    font-size: 18px;
     font-weight: bold;
     text-decoration: underline;
     color: #666666;
 }
 
-div#header #navigation {
+#navigation {
     text-align: right;
 }
 
 div#header #navigation a {
     color: #666666;
-    font-size: 18px;
     font-weight: bold;
     margin-left: 12px;
     text-decoration: none;
@@ -37,26 +36,19 @@ div#header #navigation a {
 div#footer {
     border-bottom: 2px solid #989898;
     color: #555;
-    font-size: 12px;
     margin-top: 30px;
     padding: 12px 0px 12px 0px;
     text-align: right;
 }
 
 h1 {
-  font-size: 32px;
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
 }
 
-h2 {
-    font-size: 20px;
-}
-
 div.info, div.posted {
     color: gray;
-    font-size: 16px;
     font-style: italic;
 }
 
@@ -65,19 +57,19 @@ div.posted a, div.info a {
 }
 
 p {
-  font-size: 19px;
   font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
   color: #515151;
   font-style:normal;
   line-height:30px;
+  font-size: 1.1em;
 }
 
 ul {
   font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
-  font-size: 19px;
   color: #515151;
   font-style: italic;
   line-height: 30px;
+  font-size: 1.1em;
 }
 
 blockquote {
@@ -86,10 +78,44 @@ blockquote {
 }
 blockquote p {
     font-style: italic;
-    font-size: 18px;
     padding: 10px;
 }
 
 em {
     font-weight: bold;
+}
+
+@media (max-width: 590px) {
+    #logo {
+        display: none;
+    }
+
+    div#header {
+        padding: 5px 0px 5px 0px;
+    }
+
+    #navigation {
+        text-align: center;
+    }
+
+    div#header #navigation a {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        margin: 10px 0;
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    div.posted a, div.info a, div.info, div.posted {
+        font-size: 0.8em;
+    }
+
+    p, ul {
+        line-height: 1.5em;
+    }
 }
