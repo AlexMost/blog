@@ -9,3 +9,7 @@ build :
 
 watch :
 	stack exec site watch
+
+
+clean:
+	stack exec site clean
