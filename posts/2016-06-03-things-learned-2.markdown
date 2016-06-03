@@ -11,7 +11,7 @@ Mostly about the web development.
 [The ServiceWorker: The network layer is yours to own](https://www.youtube.com/watch?v=4uQMl7mFB6g)
 
 >Nice introductory video from google developers of how we can use service workers and for what. What is offline first and why do we need it. 
-Suggest to watch if you are not familiar with the concept of the service worker, it takes only 14 minutes to get in a picture.
+Suggest to watch if you are not familiar with the concept of the service worker, it takes only 14 minutes find out the basics.
 
 [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
 
