@@ -90,6 +90,18 @@ em {
     font-weight: bold;
 }
 
+.blur-up {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    transition: filter 100ms, -webkit-filter 100ms;
+}
+
+.blur-up.lazyloaded {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    transition: filter 100ms, -webkit-filter 100ms;
+}
+
 @media (max-width: 590px) {
     #logo {
         display: none;

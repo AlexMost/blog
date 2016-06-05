@@ -11,5 +11,8 @@ my personal blog
 * ```make build```
 
 # dev info
-```make dev``` (will build and watch for changes)
+```make watch``` (will build and watch for changes)
+
+# deploy
+```make deploy```
 
