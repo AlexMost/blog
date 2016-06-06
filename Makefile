@@ -1,4 +1,4 @@
-.PHONY : install build watch deploy
+.PHONY : install build watch deploy resize
 
 install :
 	npm install .
@@ -19,6 +19,7 @@ clean:
 preview:
 	find _site/images/ -name "*.jpg" | \
 	grep -v "lqip" | \
+	grep -v "rszd" | \
 	sed 'p;s/\.jpg/\-lqip.jpg/' | \
 	xargs -n2 convert -resize 100x100^ -strip -interlace Plane -quality 10
 
@@ -30,7 +31,11 @@ lazify:
 
 
 compress:
-	find _site/images/ -name "*.jpg" -print0 | xargs -0 -n1 -I {} sh smartresize.sh {} 900
+	find images/ -name "*.jpg" -print0 | xargs -0 -n1 -I {} sh smartresize.sh {} 900
 
 
-optimize: compress preview lazify
+sizes:
+	sh resize.sh 600
+	sh resize.sh 300
+
+optimize: sizes preview lazify

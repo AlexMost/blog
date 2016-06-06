@@ -3,16 +3,12 @@ const base64 = require('base64-img');
 const fs = require('fs');
 const path = require('path');
 
-/*
- <img class="lazyload blur-up"
- data-sizes="auto"
- src="/images/istambul/220IMG_2916.jpg"
- data-srcset="/images/istambul/220IMG_2916.jpg 220w,
- /images/istambul/300IMG_2916.jpg 300w,
- /images/istambul/600IMG_2916.jpg 600w,
- /images/istambul/900IMG_2916.jpg 900w"
- />
- */
+
+function getSized(filename, size) {
+    const fn = path.basename(filename);
+    const dir = path.dirname(filename);
+    return path.join(dir, `/rszd${size}_${fn}`);
+}
 
 function lazify(filepath) {
     const basedir = process.cwd() + '/_site/images';
@@ -32,8 +28,12 @@ function lazify(filepath) {
         const lpipPath = imgAbsPath.replace(".jpg", "-lqip.jpg");
         const b64 = base64.base64Sync(lpipPath);
 
-        $(img).attr('data-src', imgRelPath);
-
+        $(img).addClass('blur-up');
+        $(img).attr('data-srcset',
+            `${imgRelPath} 900w,
+             ${getSized(imgRelPath, 600)} 600w,
+             ${getSized(imgRelPath, 600)} 300w`);
+        $(img).attr('data-sizes', 'auto');
         $(img).attr('src', b64);
         
         count += 1;
