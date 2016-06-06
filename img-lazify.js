@@ -3,9 +3,19 @@ const base64 = require('base64-img');
 const fs = require('fs');
 const path = require('path');
 
+/*
+ <img class="lazyload blur-up"
+ data-sizes="auto"
+ src="/images/istambul/220IMG_2916.jpg"
+ data-srcset="/images/istambul/220IMG_2916.jpg 220w,
+ /images/istambul/300IMG_2916.jpg 300w,
+ /images/istambul/600IMG_2916.jpg 600w,
+ /images/istambul/900IMG_2916.jpg 900w"
+ />
+ */
 
 function lazify(filepath) {
-    const basedir = process.cwd() + '/_site';
+    const basedir = process.cwd() + '/_site/images';
     const fd = fs.openSync(filepath, 'r+');
     const data = fs.readFileSync(fd);
     const $ = cheerio.load(data);
