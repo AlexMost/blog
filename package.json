@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "my personal blog",
+  "main": "img-lazify.js",
+  "dependencies": {
+    "base64-img": "^1.0.3",
+    "cheerio": "^0.20.0",
+    "lazysizes": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexMost/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexMost/blog/issues"
+  },
+  "homepage": "https://github.com/AlexMost/blog#readme"
+}
