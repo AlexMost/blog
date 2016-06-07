@@ -31,7 +31,7 @@ lazify:
 
 
 compress:
-	find images/ -name "*.jpg" -print0 | xargs -0 -n1 -I {} sh smartresize.sh {} 900
+	find tmp_img/ -name "*.jpg" -print0 | xargs -0 -n1 -I {} sh smartresize.sh {} 900
 
 
 sizes:
