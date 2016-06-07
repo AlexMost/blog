@@ -38,4 +38,8 @@ sizes:
 	sh resize.sh 600
 	sh resize.sh 300
 
+
 optimize: sizes preview lazify
+
+
+deploy: build optimize
