@@ -30,6 +30,12 @@ lazify:
 	xargs -0 -n1 node img-lazify.js
 
 
+insertcss:
+	find "$(shell pwd)/_site/" -name "*.html" -print | \
+	tr '\n' '\0' | \
+	xargs -0 -n1 node insert-css.js
+
+
 compress:
 	find tmp_img/ -name "*.jpg" -print0 | xargs -0 -n1 -I {} sh smartresize.sh {} 900
 
@@ -39,7 +45,7 @@ sizes:
 	sh resize.sh 300
 
 
-optimize: sizes preview lazify
+optimize: sizes preview lazify insertcss
 
 
 deploy: build optimize
