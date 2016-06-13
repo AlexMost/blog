@@ -5,3 +5,4 @@ _site/
 blog.iml
 node_modules/
 .DS_Store
+tmp_img/
