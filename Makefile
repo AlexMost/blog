@@ -21,7 +21,7 @@ preview:
 	grep -v "lqip" | \
 	grep -v "rszd" | \
 	sed 'p;s/\.jpg/\-lqip.jpg/' | \
-	xargs -n2 convert -resize 100x100^ -strip -interlace Plane -quality 10
+	xargs -n2 convert -resize 100 -strip -interlace Plane -quality 10
 
 
 lazify:
