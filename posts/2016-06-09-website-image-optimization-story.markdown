@@ -242,3 +242,7 @@ Here are some related links about image optimizations:
 [Check list from Google for image optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization?hl=en)
 
 [Web page bloat statistics](https://www.soasta.com/blog/page-bloat-average-web-page-2-mb/)
+
+P.S.
+
+> Here is the Makefile that automates all optimization work [https://github.com/AlexMost/blog/blob/master/Makefile](https://github.com/AlexMost/blog/blob/master/Makefile)
