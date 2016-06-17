@@ -67,7 +67,6 @@ p {
   font-style:normal;
   line-height:30px;
   font-size: 1.1em;
-  word-break: break-all;
 }
 
 ul {
@@ -76,6 +75,10 @@ ul {
   font-style: italic;
   line-height: 30px;
   font-size: 1.1em;
+}
+
+a {
+  word-break: break-all;
 }
 
 blockquote {
