@@ -3,6 +3,7 @@
 import           Data.Monoid (mappend)
 import           Hakyll
 
+domain = "http://www.mostovenko.com"
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -26,7 +27,7 @@ main = hakyll $ do
     match (fromList ["about.markdown", "contact.markdown"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
     tags <- buildTags "posts/*" (fromCapture "tags/*.html")
@@ -38,6 +39,7 @@ main = hakyll $ do
             posts <- recentFirst =<< loadAll pattern
             let ctx = constField "title" title
                       `mappend` listField "posts" postCtx (return posts)
+                      `mappend` canonicalField "canonical"
                       `mappend` defaultContext
             makeItem ""
                 >>= loadAndApplyTemplate "templates/tag.html" ctx
@@ -58,6 +60,7 @@ main = hakyll $ do
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Archives"            `mappend`
+                    canonicalField "canonical" `mappend`
                     defaultContext
 
             makeItem ""
@@ -73,6 +76,7 @@ main = hakyll $ do
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Home"                `mappend`
+                    canonicalField "canonical" `mappend`
                     defaultContext
 
             getResourceBody
@@ -84,9 +88,15 @@ main = hakyll $ do
 
 
 --------------------------------------------------------------------------------
+
+canonicalField :: String -> Context a
+canonicalField key = field key $
+    fmap (maybe "" ((domain ++) . toUrl)) . getRoute . itemIdentifier
+
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
+    canonicalField "canonical" `mappend`
     defaultContext
 
 -- context with tags
