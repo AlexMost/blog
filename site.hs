@@ -3,7 +3,7 @@
 import           Data.Monoid (mappend)
 import           Hakyll
 
-domain = "http://www.mostovenko.com"
+domain = "http://mostovenko.com"
 
 --------------------------------------------------------------------------------
 main :: IO ()
