@@ -1,6 +1,6 @@
 ---
 title: Introduction to Apache Spark (Edx course)
-date: 2016-07-04
+date: 2016-07-13
 tags: spark, courses
 ---
 
