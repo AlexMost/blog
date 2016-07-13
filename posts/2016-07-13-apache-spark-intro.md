@@ -13,7 +13,7 @@ more about this technology and about what makes it so special.
 
 Here are just some numbers that can impress and give you some insight:
 
-* Apache Spark was able to sort *100 TB* array in *23 minutes* !!!
+* Apache Spark is able to sort *100 TB* array in *23 minutes* !!!
 * It is the first technology that solved the problem of *1 PT* array sorting !!!
 
 During the course, you will be working with [DataBricks](https://databricks.com/) service that allows you to create and launch spark jobs in a cluster. And also provides really simple and user-friendly interface for managing clusters.
