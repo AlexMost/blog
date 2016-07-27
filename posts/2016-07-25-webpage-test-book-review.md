@@ -1,5 +1,5 @@
 ---
-title: 'Using Webpagetets' book review
+title: 'Using Webpagetest' book review
 date: 2016-07-26
 tags: books, frontend, book review
 ---
