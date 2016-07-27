@@ -5,6 +5,7 @@ import           Hakyll
 
 domain = "http://www.mostovenko.com"
 
+
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
